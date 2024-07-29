@@ -9,10 +9,12 @@
   },
   "editor.formatOnSave": true,
   "eslint.validate": [
+    "javascript",
     "json",
     "json5",
     "jsonc",
-    "markdown"
+    "markdown",
+    "typescript"
   ],
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }
