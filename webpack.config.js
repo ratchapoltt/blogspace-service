@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const EslintWebpackPlugin = require("eslint-webpack-plugin");
 const DotenvWebpackPlugin = require("dotenv-webpack");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 
@@ -33,6 +34,10 @@ module.exports = (option) => {
     },
     plugins: [
       ...option.plugins,
+      new EslintWebpackPlugin({
+        cache: false,
+        extensions: ["js", "ts"]
+      }),
       new CleanWebpackPlugin(),
       new CopyWebpackPlugin({
         patterns: [
