@@ -2,5 +2,10 @@
   "cSpell.words": [
     "blogspace",
     "ratchapoltt"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "eslint.validate": ["markdown"]
 }
