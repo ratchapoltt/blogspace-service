@@ -1,5 +1,8 @@
 # Dependencies directory
 node_modules/*
 
+# Complie directory
+dist/*
+
 # Json files
 package-lock.json

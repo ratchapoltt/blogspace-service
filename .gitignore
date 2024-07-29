@@ -1,6 +1,14 @@
 # Dependencies directory
 node_modules/*
 
+# Complie directory
+dist/*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
 # Editor directory and files
 .vscode/*
 !.vscode/extensions.json
