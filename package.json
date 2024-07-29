@@ -13,11 +13,13 @@
     "npm": "10.7.0"
   },
   "scripts": {
-    "lint": "eslint ./**/*.md --quiet --max-warnings 10",
-    "lint:fix": "eslint ./**/*.md --fix"
+    "lint": "eslint ./**/*.{json,json5,jsonc,md} --quiet --max-warnings 10",
+    "lint:fix": "eslint ./**/*.{json,json5,jsonc,md} --fix"
   },
   "devDependencies": {
     "eslint": "8.57.0",
-    "eslint-plugin-markdownlint": "0.6.0"
+    "eslint-plugin-jsonc": "2.16.0",
+    "eslint-plugin-markdownlint": "0.6.0",
+    "jsonc-eslint-parser": "2.4.0"
   }
 }
