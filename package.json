@@ -17,9 +17,11 @@
     "lint:fix": "eslint ./**/*.{json,json5,jsonc,md} --fix"
   },
   "devDependencies": {
+    "@types/node": "22.0.0",
     "eslint": "8.57.0",
     "eslint-plugin-jsonc": "2.16.0",
     "eslint-plugin-markdownlint": "0.6.0",
-    "jsonc-eslint-parser": "2.4.0"
+    "jsonc-eslint-parser": "2.4.0",
+    "typescript": "5.3.3"
   }
 }
