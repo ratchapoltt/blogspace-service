@@ -7,5 +7,10 @@
     "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
-  "eslint.validate": ["markdown"]
+  "eslint.validate": [
+    "json",
+    "json5",
+    "jsonc",
+    "markdown"
+  ]
 }
