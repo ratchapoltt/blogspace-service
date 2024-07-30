@@ -1,7 +1,10 @@
 {
   "cSpell.words": [
     "blogspace",
+    "commitlint",
     "nestjs",
+    "precommit",
+    "prepush",
     "ratchapoltt"
   ],
   "editor.codeActionsOnSave": {
