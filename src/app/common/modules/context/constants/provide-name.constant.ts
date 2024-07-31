@@ -1,0 +1,1 @@
+export const CONTEXT_STORE_VALUE: string = "CONTEXT_STORE_VALUE";

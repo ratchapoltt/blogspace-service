@@ -1,7 +1,7 @@
 export class EnvironmentSystemApplication {
-  public readonly version!: string;
-  public readonly name!: string;
-  public readonly description!: string;
+  public readonly version: string;
+  public readonly name: string;
+  public readonly description: string;
 
   public constructor(data: Required<EnvironmentSystemApplication>) {
     Object.assign(this, data);
@@ -9,7 +9,7 @@ export class EnvironmentSystemApplication {
 }
 
 export class EnvironmentSystemDate {
-  public readonly timezone!: string;
+  public readonly timezone: string;
 
   public constructor(data: Required<EnvironmentSystemDate>) {
     Object.assign(this, data);
@@ -17,9 +17,9 @@ export class EnvironmentSystemDate {
 }
 
 export class EnvironmentSystem {
-  public readonly profile!: string;
-  public readonly application!: EnvironmentSystemApplication;
-  public readonly date!: EnvironmentSystemDate;
+  public readonly profile: string;
+  public readonly application: EnvironmentSystemApplication;
+  public readonly date: EnvironmentSystemDate;
 
   public constructor(data: Required<EnvironmentSystem>) {
     Object.assign(this, data);

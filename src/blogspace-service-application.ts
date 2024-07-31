@@ -37,7 +37,7 @@ class BlogspaceServiceApplication {
         }
       });
 
-      logger.fatal!(error);
+      logger.fatal(error);
     }
   }
 }

@@ -1,11 +1,25 @@
 {
   "cSpell.words": [
     "blogspace",
+    "bbbbmmdd",
+    "bbbbmmddhhmmss",
+    "bbbbmmddhhmmsssss",
+    "ddmmbbbb",
+    "ddmmbbbbhhmmss",
+    "ddmmbbbbhhmmsssss",
+    "ddmmyyyyhhmmss",
+    "ddmmyyyyhhmmsssss",
     "commitlint",
+    "cqrs",
+    "dtos",
+    "hhmmsssss",
+    "Logform",
     "nestjs",
     "precommit",
     "prepush",
-    "ratchapoltt"
+    "ratchapoltt",
+    "sonarjs",
+    "yyyymmddhhmmsssss"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"

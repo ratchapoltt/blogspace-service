@@ -4,11 +4,11 @@ import { Request } from "express";
 
 @Injectable()
 export class HttpService {
-  public getLanguageFromHttpRequestHeader(request: Request): string | null {
-    const language: string | null = request.header("accept-language") ?? null;
+  public getLanguageFromHttpRequestHeader(request: Request): string {
+    const language: string = request.header("accept-language");
 
-    if (language !== null) {
-      return language.split(",").at(0)!.split("-").at(0)!;
+    if (language !== null && language !== undefined) {
+      return language.split(",").at(0).split("-").at(0);
     }
 
     return language;

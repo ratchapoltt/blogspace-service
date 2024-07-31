@@ -1,6 +1,9 @@
 import * as Joi from "joi";
 
 import {
+  EnvI18nFileValidationSchema,
+  EnvI18nLanguageValidationSchema,
+  EnvI18nValidationSchema,
   EnvLoggerColorizeValidationSchema,
   EnvLoggerErrorValidationSchema,
   EnvLoggerLabelValidationSchema,
@@ -66,6 +69,26 @@ export const environmentValidationSchema: Joi.ObjectSchema<EnvValidationSchema> 
         api: Joi.object<EnvSecurityApiValidationSchema>(
           new EnvSecurityApiValidationSchema({
             key: Joi.string().length(50).required()
+          })
+        ).required()
+      })
+    ).required(),
+    i18n: Joi.object<EnvI18nValidationSchema>(
+      new EnvI18nValidationSchema({
+        default: Joi.string().required(),
+        encoding: Joi.string().required(),
+        language: Joi.object<EnvI18nLanguageValidationSchema>(
+          new EnvI18nLanguageValidationSchema({
+            en: Joi.object<EnvI18nFileValidationSchema>(
+              new EnvI18nFileValidationSchema({
+                path: Joi.string().required()
+              })
+            ).required(),
+            th: Joi.object<EnvI18nFileValidationSchema>(
+              new EnvI18nFileValidationSchema({
+                path: Joi.string().required()
+              })
+            ).required()
           })
         ).required()
       })
