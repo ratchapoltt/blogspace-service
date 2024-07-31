@@ -3,7 +3,7 @@ const EslintWebpackPlugin = require("eslint-webpack-plugin");
 const DotenvWebpackPlugin = require("dotenv-webpack");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 
-const path = require("path");
+const path = require("node:path");
 const sourceMapSupport = require("source-map-support");
 
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
@@ -12,7 +12,7 @@ sourceMapSupport.install({
   environment: "node"
 });
 
-module.exports = (option) => {
+module.exports = function compile(option) {
   return {
     ...option,
     devtool: "source-map",

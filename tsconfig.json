@@ -23,6 +23,18 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./dist",
+    "paths": {
+      "@app/common": ["src/app/common"],
+      "@app/common/*": ["src/app/common/*"],
+      "@app/core": ["src/app/core"],
+      "@app/core/*": ["src/app/core/*"],
+      "@app/dto": ["src/app/dtos"],
+      "@app/dto/*": ["src/app/dtos/*"],
+      "@configuration": ["src/configurations"],
+      "@configuration/*": ["src/configurations/*"],
+      "@environment": ["src/environments"],
+      "@environment/*": ["src/environments/*"]
+    },
     "removeComments": true,
     "resolveJsonModule": true,
     "sourceMap": true,
