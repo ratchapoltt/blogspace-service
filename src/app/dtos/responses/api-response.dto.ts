@@ -12,7 +12,7 @@ export class ApiHeaderResponse {
 
 export class ApiErrorResponse {
   public header: ApiHeaderResponse;
-  public error: string | number | Record<string, unknown> | Date;
+  public error: string | number | object | Date;
 
   public constructor(data?: Partial<ApiErrorResponse>) {
     if (data !== null && data !== undefined) {
@@ -23,7 +23,7 @@ export class ApiErrorResponse {
 
 export class ApiResponse {
   public header: ApiHeaderResponse;
-  public payload: string | number | Record<string, unknown> | Date;
+  public payload: string | number | object | Date;
 
   public constructor(data?: Partial<ApiResponse>) {
     if (data !== null && data !== undefined) {
