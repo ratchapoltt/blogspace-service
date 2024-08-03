@@ -1,0 +1,33 @@
+version: "3.7"
+services:
+  database:
+    image: mysql:8.4.2
+    container_name: database
+    environment:
+      MYSQL_ROOT_PASSWORD: p@sswordev
+      MYSQL_DATABASE: blog
+    volumes:
+      - ./.development/database/data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    networks:
+      - blogspace-service
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    container_name: pma
+    environment:
+      PMA_PORT: 3306
+      PMA_HOST: database
+      PMA_ARBITRARY: 1
+    ports:
+      - 8081:80
+    networks:
+      - blogspace-service
+    links:
+      - database
+    depends_on:
+      - database
+networks:
+  blogspace-service:
+    name: blogspace-service
+    driver: bridge
