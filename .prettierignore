@@ -3,3 +3,9 @@ node_modules/*
 
 # Complie directory
 dist/*
+
+# Test directory
+coverage/*
+
+# Development directory
+.development/*

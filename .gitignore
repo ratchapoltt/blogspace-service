@@ -4,12 +4,22 @@ node_modules/*
 # Complie directory
 dist/*
 
-# Environment files
-.env
-.env.*
-!.env.example
+# Test directory
+coverage/*
+
+# Development directory
+.development/*
+
+# Log directory and files
+logs/*
+npm-debug.log*
 
 # Editor directory and files
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+
+# Environment files
+.env
+.env.*
+!.env.example

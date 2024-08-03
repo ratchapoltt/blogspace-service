@@ -4,5 +4,11 @@ node_modules/*
 # Complie directory
 dist/*
 
+# Test directory
+coverage/*
+
+# Development directory
+.development/*
+
 # Json files
 package-lock.json
