@@ -20,7 +20,7 @@
       "@app/core": ["src/app/core"],
       "@app/core/*": ["src/app/core/*"],
       "@app/database": ["src/app/databases"],
-      "@app/database/": ["src/app/databases/*"],
+      "@app/database/*": ["src/app/databases/*"],
       "@app/dto": ["src/app/dtos"],
       "@app/dto/*": ["src/app/dtos/*"],
       "@configuration": ["src/configurations"],
